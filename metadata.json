@@ -1,0 +1,5 @@
+{
+  "name": "Chess Diagnostics Pipeline",
+  "description": "An automated, diagnostic data pipeline for chess performance that performs batch processing on historical game data to extract actionable statistical insights.",
+  "requestFramePermissions": []
+}

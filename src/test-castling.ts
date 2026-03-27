@@ -1,0 +1,10 @@
+import { Chess } from 'chess.js';
+const c = new Chess();
+c.move('e4'); c.move('e5');
+c.move('Nf3'); c.move('Nc6');
+c.move('Bc4'); c.move('Bc5');
+c.move('O-O');
+const moveObj = c.history({ verbose: true })[6];
+const tempChess = new Chess('r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4');
+const result = tempChess.move(moveObj);
+console.log(result);
